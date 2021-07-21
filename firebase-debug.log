@@ -1,0 +1,330 @@
+[debug] [2021-07-21T14:04:34.008Z] ----------------------------------------------------------------------
+[debug] [2021-07-21T14:04:34.011Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Udin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-07-21T14:04:34.012Z] CLI Version:   9.16.0
+[debug] [2021-07-21T14:04:34.012Z] Platform:      win32
+[debug] [2021-07-21T14:04:34.012Z] Node Version:  v14.17.3
+[debug] [2021-07-21T14:04:34.013Z] Time:          Wed Jul 21 2021 21:04:34 GMT+0700 (Western Indonesia Time)
+[debug] [2021-07-21T14:04:34.014Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-21T14:04:34.102Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-21T14:04:34.102Z] > authorizing via signed-in user (iffandsb@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Udin\Desktop\iffan\LABORA-APP
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using app-sholl. 
+[debug] [2021-07-21T14:04:48.902Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/app-sholl [none]
+[debug] [2021-07-21T14:04:49.268Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/app-sholl 200
+[debug] [2021-07-21T14:04:49.268Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/app-sholl {"projectId":"app-sholl","projectNumber":"860726637437","displayName":"app-sholl","name":"projects/app-sholl","resources":{"hostingSite":"app-sholl","storageBucket":"app-sholl.appspot.com","locationId":"asia-southeast2"},"state":"ACTIVE"}
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\Udin\Desktop\iffan\LABORA-APP is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=904837130&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-07-21T14:04:49.916Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"192273200f95fae8fd6b","redirect_uri":"http://localhost:9005","state":"904837130"}
+[debug] [2021-07-21T14:04:50.407Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Wed, 21 Jul 2021 14:04:50 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"07fed112dba88069870977de6dabf6ff\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com render-temp.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"E90F:4E29:A15D8:A93E2:60F82982"}
+[debug] [2021-07-21T14:04:50.413Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-07-21T14:04:51.567Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-07-21T14:04:51.568Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"iffandsbiyu123","id":53128874,"node_id":"MDQ6VXNlcjUzMTI4ODc0","avatar_url":"https://avatars.githubusercontent.com/u/53128874?v=4","gravatar_id":"","url":"https://api.github.com/users/iffandsbiyu123","html_url":"https://github.com/iffandsbiyu123","followers_url":"https://api.github.com/users/iffandsbiyu123/followers","following_url":"https://api.github.com/users/iffandsbiyu123/following{/other_user}","gists_url":"https://api.github.com/users/iffandsbiyu123/gists{/gist_id}","starred_url":"https://api.github.com/users/iffandsbiyu123/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/iffandsbiyu123/subscriptions","organizations_url":"https://api.github.com/users/iffandsbiyu123/orgs","repos_url":"https://api.github.com/users/iffandsbiyu123/repos","events_url":"https://api.github.com/users/iffandsbiyu123/events{/privacy}","received_events_url":"https://api.github.com/users/iffandsbiyu123/received_events","type":"User","site_admin":false,"name":"Iffandsbiyu","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":"Iffandsbiyu","twitter_username":null,"public_repos":3,"public_gists":0,"followers":0,"following":1,"created_at":"2019-07-20T22:32:54Z","updated_at":"2021-07-16T14:16:35Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":1,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as iffandsbiyu123 
+[info] 
+[debug] [2021-07-21T14:05:45.518Z] ----------------------------------------------------------------------
+[debug] [2021-07-21T14:05:45.522Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Udin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-07-21T14:05:45.523Z] CLI Version:   9.16.0
+[debug] [2021-07-21T14:05:45.523Z] Platform:      win32
+[debug] [2021-07-21T14:05:45.523Z] Node Version:  v14.17.3
+[debug] [2021-07-21T14:05:45.524Z] Time:          Wed Jul 21 2021 21:05:45 GMT+0700 (Western Indonesia Time)
+[debug] [2021-07-21T14:05:45.524Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-21T14:05:45.613Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-21T14:05:45.613Z] > authorizing via signed-in user (iffandsb@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Udin\Desktop\iffan\LABORA-APP
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2021-07-21T14:29:48.300Z] ----------------------------------------------------------------------
+[debug] [2021-07-21T14:29:48.304Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Udin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-07-21T14:29:48.305Z] CLI Version:   9.16.0
+[debug] [2021-07-21T14:29:48.305Z] Platform:      win32
+[debug] [2021-07-21T14:29:48.305Z] Node Version:  v14.17.3
+[debug] [2021-07-21T14:29:48.312Z] Time:          Wed Jul 21 2021 21:29:48 GMT+0700 (Western Indonesia Time)
+[debug] [2021-07-21T14:29:48.312Z] ----------------------------------------------------------------------
+[debug] 
+[warn] !  JSON error trying to load C:\Users\Udin\Desktop\iffan\LABORA-APP\.firebaserc 
+[debug] [2021-07-21T14:29:48.432Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-21T14:29:48.432Z] > authorizing via signed-in user (iffandsb@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Udin\Desktop\iffan\LABORA-APP
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-07-21T14:31:55.751Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-21T14:31:55.751Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-21T14:31:55.942Z] <<< HTTP RESPONSE 200 {"date":"Wed, 21 Jul 2021 14:31:56 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-21T14:31:55.968Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"Labora-app","name":"Labora-app"}
+[debug] [2021-07-21T14:31:57.092Z] <<< HTTP RESPONSE 400 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 21 Jul 2021 14:31:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=936","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-21T14:31:57.092Z] <<< HTTP RESPONSE BODY {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2021-07-21T14:31:57.241Z] FirebaseError: HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at module.exports (C:\Users\Udin\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Udin\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\Udin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:375:28)
+    at Request.emit (domain.js:470:12)
+    at Request.<anonymous> (C:\Users\Udin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:375:28)
+    at Request.emit (domain.js:470:12)
+    at IncomingMessage.<anonymous> (C:\Users\Udin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:481:28)
+    at IncomingMessage.emit (events.js:387:35)
+    at IncomingMessage.emit (domain.js:470:12)
+    at endReadableNT (internal/streams/readable.js:1317:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2021-07-21T14:32:08.038Z] ----------------------------------------------------------------------
+[debug] [2021-07-21T14:32:08.041Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Udin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-07-21T14:32:08.042Z] CLI Version:   9.16.0
+[debug] [2021-07-21T14:32:08.042Z] Platform:      win32
+[debug] [2021-07-21T14:32:08.042Z] Node Version:  v14.17.3
+[debug] [2021-07-21T14:32:08.043Z] Time:          Wed Jul 21 2021 21:32:08 GMT+0700 (Western Indonesia Time)
+[debug] [2021-07-21T14:32:08.043Z] ----------------------------------------------------------------------
+[debug] 
+[warn] !  JSON error trying to load C:\Users\Udin\Desktop\iffan\LABORA-APP\.firebaserc 
+[debug] [2021-07-21T14:32:08.138Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-21T14:32:08.138Z] > authorizing via signed-in user (iffandsb@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Udin\Desktop\iffan\LABORA-APP
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-07-21T14:32:17.118Z] > refreshing access token with scopes: []
+[debug] [2021-07-21T14:32:17.119Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-21T14:32:17.284Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 21 Jul 2021 14:32:17 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-21T14:32:17.319Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-07-21T14:32:17.837Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-07-21T14:32:17.837Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project app-sholl (app-sholl) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\Udin\Desktop\iffan\LABORA-APP is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=156215797&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-07-21T14:32:27.489Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"d121cd6193c084038285","redirect_uri":"http://localhost:9005","state":"156215797"}
+[debug] [2021-07-21T14:32:27.920Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Wed, 21 Jul 2021 14:32:27 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"a8361ab08365e16b9e5c770d3830ca57\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com render-temp.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"E2F8:3A1C:2A6C09:2C748B:60F82FFB"}
+[debug] [2021-07-21T14:32:27.930Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-07-21T14:32:28.394Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-07-21T14:32:28.395Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"iffandsbiyu123","id":53128874,"node_id":"MDQ6VXNlcjUzMTI4ODc0","avatar_url":"https://avatars.githubusercontent.com/u/53128874?v=4","gravatar_id":"","url":"https://api.github.com/users/iffandsbiyu123","html_url":"https://github.com/iffandsbiyu123","followers_url":"https://api.github.com/users/iffandsbiyu123/followers","following_url":"https://api.github.com/users/iffandsbiyu123/following{/other_user}","gists_url":"https://api.github.com/users/iffandsbiyu123/gists{/gist_id}","starred_url":"https://api.github.com/users/iffandsbiyu123/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/iffandsbiyu123/subscriptions","organizations_url":"https://api.github.com/users/iffandsbiyu123/orgs","repos_url":"https://api.github.com/users/iffandsbiyu123/repos","events_url":"https://api.github.com/users/iffandsbiyu123/events{/privacy}","received_events_url":"https://api.github.com/users/iffandsbiyu123/received_events","type":"User","site_admin":false,"name":"Iffandsbiyu","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":"Iffandsbiyu","twitter_username":null,"public_repos":4,"public_gists":0,"followers":0,"following":1,"created_at":"2019-07-20T22:32:54Z","updated_at":"2021-07-21T14:14:40Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":1,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as iffandsbiyu123 
+[info] 
+[debug] [2021-07-21T14:34:17.874Z] >>> [apiv2][query] GET https://api.github.com/repos/iffandsbiyu123/LABORA-APP/actions/secrets/public-key type=owner
+[debug] [2021-07-21T14:34:18.295Z] <<< [apiv2][status] GET https://api.github.com/repos/iffandsbiyu123/LABORA-APP/actions/secrets/public-key 200
+[debug] [2021-07-21T14:34:18.295Z] <<< [apiv2][body] GET https://api.github.com/repos/iffandsbiyu123/LABORA-APP/actions/secrets/public-key {"key_id":"568250167242549743","key":"q8Fc7An+IkFaJ6JqBXeAbAqnR5ITXLKXZnpii18t2BM="}
+[debug] [2021-07-21T14:34:18.300Z] >>> [apiv2][query] GET https://api.github.com/repos/iffandsbiyu123/LABORA-APP [none]
+[debug] [2021-07-21T14:34:18.727Z] <<< [apiv2][status] GET https://api.github.com/repos/iffandsbiyu123/LABORA-APP 200
+[debug] [2021-07-21T14:34:18.728Z] <<< [apiv2][body] GET https://api.github.com/repos/iffandsbiyu123/LABORA-APP {"id":388137872,"node_id":"MDEwOlJlcG9zaXRvcnkzODgxMzc4NzI=","name":"LABORA-APP","full_name":"iffandsbiyu123/LABORA-APP","private":false,"owner":{"login":"iffandsbiyu123","id":53128874,"node_id":"MDQ6VXNlcjUzMTI4ODc0","avatar_url":"https://avatars.githubusercontent.com/u/53128874?v=4","gravatar_id":"","url":"https://api.github.com/users/iffandsbiyu123","html_url":"https://github.com/iffandsbiyu123","followers_url":"https://api.github.com/users/iffandsbiyu123/followers","following_url":"https://api.github.com/users/iffandsbiyu123/following{/other_user}","gists_url":"https://api.github.com/users/iffandsbiyu123/gists{/gist_id}","starred_url":"https://api.github.com/users/iffandsbiyu123/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/iffandsbiyu123/subscriptions","organizations_url":"https://api.github.com/users/iffandsbiyu123/orgs","repos_url":"https://api.github.com/users/iffandsbiyu123/repos","events_url":"https://api.github.com/users/iffandsbiyu123/events{/privacy}","received_events_url":"https://api.github.com/users/iffandsbiyu123/received_events","type":"User","site_admin":false},"html_url":"https://github.com/iffandsbiyu123/LABORA-APP","description":"Aplikasi manajemen laboratorium IST Akprind Yogyakarta","fork":false,"url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP","forks_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/forks","keys_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/keys{/key_id}","collaborators_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/teams","hooks_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/hooks","issue_events_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/issues/events{/number}","events_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/events","assignees_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/assignees{/user}","branches_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/branches{/branch}","tags_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/tags","blobs_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/git/refs{/sha}","trees_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/git/trees{/sha}","statuses_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/statuses/{sha}","languages_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/languages","stargazers_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/stargazers","contributors_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/contributors","subscribers_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/subscribers","subscription_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/subscription","commits_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/commits{/sha}","git_commits_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/git/commits{/sha}","comments_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/comments{/number}","issue_comment_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/issues/comments{/number}","contents_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/contents/{+path}","compare_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/compare/{base}...{head}","merges_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/merges","archive_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/downloads","issues_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/issues{/number}","pulls_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/pulls{/number}","milestones_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/milestones{/number}","notifications_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/labels{/name}","releases_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/releases{/id}","deployments_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/deployments","created_at":"2021-07-21T14:09:38Z","updated_at":"2021-07-21T14:09:38Z","pushed_at":"2021-07-21T14:09:39Z","git_url":"git://github.com/iffandsbiyu123/LABORA-APP.git","ssh_url":"git@github.com:iffandsbiyu123/LABORA-APP.git","clone_url":"https://github.com/iffandsbiyu123/LABORA-APP.git","svn_url":"https://github.com/iffandsbiyu123/LABORA-APP","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"push":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"delete_branch_on_merge":false,"network_count":0,"subscribers_count":1}
+[debug] [2021-07-21T14:34:18.736Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-21T14:34:18.737Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-21T14:34:18.864Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 21 Jul 2021 14:34:19 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-21T14:34:18.893Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/app-sholl/serviceAccounts  
+ {"accountId":"github-action-388137872","serviceAccount":{"displayName":"GitHub Actions (iffandsbiyu123/LABORA-APP)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository iffandsbiyu123/LABORA-APP"}}
+[debug] [2021-07-21T14:34:20.725Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Jul 2021 14:34:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-21T14:34:20.727Z] >>> HTTP REQUEST GET https://iam.googleapis.com/v1/projects/app-sholl/serviceAccounts/github-action-388137872@app-sholl.iam.gserviceaccount.com  
+ 
+[debug] [2021-07-21T14:34:20.729Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/app-sholl:getIamPolicy  
+ 
+[debug] [2021-07-21T14:34:21.881Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Jul 2021 14:34:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-21T14:34:21.963Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Jul 2021 14:34:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1121","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-21T14:34:21.965Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/app-sholl:setIamPolicy  
+ {"policy":{"version":1,"etag":"BwW8nGUdls4=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-860726637437@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:app-sholl@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-63cpe@app-sholl.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-63cpe@app-sholl.iam.gserviceaccount.com","serviceAccount:github-action-388137872@app-sholl.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-860726637437@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-63cpe@app-sholl.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:iffandsb@gmail.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-388137872@app-sholl.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-388137872@app-sholl.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-388137872@app-sholl.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2021-07-21T14:34:23.657Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Jul 2021 14:34:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1581","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-21T14:34:23.659Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/app-sholl/serviceAccounts/github-action-388137872@app-sholl.iam.gserviceaccount.com/keys  
+ {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2021-07-21T14:34:25.139Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Jul 2021 14:34:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] +  Created service account github-action-388137872 with Firebase Hosting admin permissions. 
+[debug] [2021-07-21T14:34:25.215Z] >>> [apiv2][query] PUT https://api.github.com/repos/iffandsbiyu123/LABORA-APP/actions/secrets/FIREBASE_SERVICE_ACCOUNT_APP_SHOLL [none]
+[debug] [2021-07-21T14:34:25.215Z] >>> [apiv2][body] PUT https://api.github.com/repos/iffandsbiyu123/LABORA-APP/actions/secrets/FIREBASE_SERVICE_ACCOUNT_APP_SHOLL {"encrypted_value":"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","key_id":"568250167242549743"}
+[debug] [2021-07-21T14:34:25.736Z] <<< [apiv2][status] PUT https://api.github.com/repos/iffandsbiyu123/LABORA-APP/actions/secrets/FIREBASE_SERVICE_ACCOUNT_APP_SHOLL 201
+[debug] [2021-07-21T14:34:25.737Z] <<< [apiv2][body] PUT https://api.github.com/repos/iffandsbiyu123/LABORA-APP/actions/secrets/FIREBASE_SERVICE_ACCOUNT_APP_SHOLL {}
+[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_APP_SHOLL. 
+[info] i  You can manage your secrets at https://github.com/iffandsbiyu123/LABORA-APP/settings/secrets. 
+[info] 
+[debug] [2021-07-21T14:43:27.915Z] ----------------------------------------------------------------------
+[debug] [2021-07-21T14:43:27.918Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Udin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-07-21T14:43:27.919Z] CLI Version:   9.16.0
+[debug] [2021-07-21T14:43:27.919Z] Platform:      win32
+[debug] [2021-07-21T14:43:27.919Z] Node Version:  v14.17.3
+[debug] [2021-07-21T14:43:27.920Z] Time:          Wed Jul 21 2021 21:43:27 GMT+0700 (Western Indonesia Time)
+[debug] [2021-07-21T14:43:27.920Z] ----------------------------------------------------------------------
+[debug] 
+[warn] !  JSON error trying to load C:\Users\Udin\Desktop\iffan\LABORA-APP\.firebaserc 
+[debug] [2021-07-21T14:43:28.013Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-21T14:43:28.013Z] > authorizing via signed-in user (iffandsb@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Udin\Desktop\iffan\LABORA-APP
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-07-21T14:43:37.478Z] > refreshing access token with scopes: []
+[debug] [2021-07-21T14:43:37.479Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-21T14:43:37.670Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 21 Jul 2021 14:43:37 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-21T14:43:37.697Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/app-sholl [none]
+[debug] [2021-07-21T14:43:38.093Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/app-sholl 200
+[debug] [2021-07-21T14:43:38.094Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/app-sholl {"projectId":"app-sholl","projectNumber":"860726637437","displayName":"app-sholl","name":"projects/app-sholl","resources":{"hostingSite":"app-sholl","storageBucket":"app-sholl.appspot.com","locationId":"asia-southeast2"},"state":"ACTIVE"}
+[info] i  Using project app-sholl (app-sholl) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\Udin\Desktop\iffan\LABORA-APP is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=674727659&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-07-21T14:43:38.830Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"fc2dbbebb5e1bce59ff7","redirect_uri":"http://localhost:9005","state":"674727659"}
+[debug] [2021-07-21T14:43:39.379Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Wed, 21 Jul 2021 14:43:39 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"0392a2918eb68417f6c73c941df9e253\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com render-temp.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"EDF2:2428:281148:2A2396:60F8329B"}
+[debug] [2021-07-21T14:43:39.393Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-07-21T14:43:39.858Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-07-21T14:43:39.858Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"iffandsbiyu123","id":53128874,"node_id":"MDQ6VXNlcjUzMTI4ODc0","avatar_url":"https://avatars.githubusercontent.com/u/53128874?v=4","gravatar_id":"","url":"https://api.github.com/users/iffandsbiyu123","html_url":"https://github.com/iffandsbiyu123","followers_url":"https://api.github.com/users/iffandsbiyu123/followers","following_url":"https://api.github.com/users/iffandsbiyu123/following{/other_user}","gists_url":"https://api.github.com/users/iffandsbiyu123/gists{/gist_id}","starred_url":"https://api.github.com/users/iffandsbiyu123/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/iffandsbiyu123/subscriptions","organizations_url":"https://api.github.com/users/iffandsbiyu123/orgs","repos_url":"https://api.github.com/users/iffandsbiyu123/repos","events_url":"https://api.github.com/users/iffandsbiyu123/events{/privacy}","received_events_url":"https://api.github.com/users/iffandsbiyu123/received_events","type":"User","site_admin":false,"name":"Iffandsbiyu","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":"Iffandsbiyu","twitter_username":null,"public_repos":4,"public_gists":0,"followers":0,"following":1,"created_at":"2019-07-20T22:32:54Z","updated_at":"2021-07-21T14:14:40Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":1,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as iffandsbiyu123 
+[info] 
+[debug] [2021-07-21T14:44:11.296Z] >>> [apiv2][query] GET https://api.github.com/repos/iffandsbiyu123/LABORA-APP/actions/secrets/public-key type=owner
+[debug] [2021-07-21T14:44:11.724Z] <<< [apiv2][status] GET https://api.github.com/repos/iffandsbiyu123/LABORA-APP/actions/secrets/public-key 200
+[debug] [2021-07-21T14:44:11.724Z] <<< [apiv2][body] GET https://api.github.com/repos/iffandsbiyu123/LABORA-APP/actions/secrets/public-key {"key_id":"568250167242549743","key":"q8Fc7An+IkFaJ6JqBXeAbAqnR5ITXLKXZnpii18t2BM="}
+[debug] [2021-07-21T14:44:11.729Z] >>> [apiv2][query] GET https://api.github.com/repos/iffandsbiyu123/LABORA-APP [none]
+[debug] [2021-07-21T14:44:12.191Z] <<< [apiv2][status] GET https://api.github.com/repos/iffandsbiyu123/LABORA-APP 200
+[debug] [2021-07-21T14:44:12.191Z] <<< [apiv2][body] GET https://api.github.com/repos/iffandsbiyu123/LABORA-APP {"id":388137872,"node_id":"MDEwOlJlcG9zaXRvcnkzODgxMzc4NzI=","name":"LABORA-APP","full_name":"iffandsbiyu123/LABORA-APP","private":false,"owner":{"login":"iffandsbiyu123","id":53128874,"node_id":"MDQ6VXNlcjUzMTI4ODc0","avatar_url":"https://avatars.githubusercontent.com/u/53128874?v=4","gravatar_id":"","url":"https://api.github.com/users/iffandsbiyu123","html_url":"https://github.com/iffandsbiyu123","followers_url":"https://api.github.com/users/iffandsbiyu123/followers","following_url":"https://api.github.com/users/iffandsbiyu123/following{/other_user}","gists_url":"https://api.github.com/users/iffandsbiyu123/gists{/gist_id}","starred_url":"https://api.github.com/users/iffandsbiyu123/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/iffandsbiyu123/subscriptions","organizations_url":"https://api.github.com/users/iffandsbiyu123/orgs","repos_url":"https://api.github.com/users/iffandsbiyu123/repos","events_url":"https://api.github.com/users/iffandsbiyu123/events{/privacy}","received_events_url":"https://api.github.com/users/iffandsbiyu123/received_events","type":"User","site_admin":false},"html_url":"https://github.com/iffandsbiyu123/LABORA-APP","description":"Aplikasi manajemen laboratorium IST Akprind Yogyakarta","fork":false,"url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP","forks_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/forks","keys_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/keys{/key_id}","collaborators_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/teams","hooks_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/hooks","issue_events_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/issues/events{/number}","events_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/events","assignees_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/assignees{/user}","branches_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/branches{/branch}","tags_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/tags","blobs_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/git/refs{/sha}","trees_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/git/trees{/sha}","statuses_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/statuses/{sha}","languages_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/languages","stargazers_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/stargazers","contributors_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/contributors","subscribers_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/subscribers","subscription_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/subscription","commits_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/commits{/sha}","git_commits_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/git/commits{/sha}","comments_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/comments{/number}","issue_comment_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/issues/comments{/number}","contents_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/contents/{+path}","compare_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/compare/{base}...{head}","merges_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/merges","archive_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/downloads","issues_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/issues{/number}","pulls_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/pulls{/number}","milestones_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/milestones{/number}","notifications_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/labels{/name}","releases_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/releases{/id}","deployments_url":"https://api.github.com/repos/iffandsbiyu123/LABORA-APP/deployments","created_at":"2021-07-21T14:09:38Z","updated_at":"2021-07-21T14:09:38Z","pushed_at":"2021-07-21T14:09:39Z","git_url":"git://github.com/iffandsbiyu123/LABORA-APP.git","ssh_url":"git@github.com:iffandsbiyu123/LABORA-APP.git","clone_url":"https://github.com/iffandsbiyu123/LABORA-APP.git","svn_url":"https://github.com/iffandsbiyu123/LABORA-APP","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"push":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"delete_branch_on_merge":false,"network_count":0,"subscribers_count":1}
+[debug] [2021-07-21T14:44:12.198Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-21T14:44:12.199Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-21T14:44:12.319Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Wed, 21 Jul 2021 14:44:12 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-21T14:44:12.347Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/app-sholl/serviceAccounts  
+ {"accountId":"github-action-388137872","serviceAccount":{"displayName":"GitHub Actions (iffandsbiyu123/LABORA-APP)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository iffandsbiyu123/LABORA-APP"}}
+[debug] [2021-07-21T14:44:13.690Z] <<< HTTP RESPONSE 409 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 21 Jul 2021 14:44:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-21T14:44:13.691Z] <<< HTTP RESPONSE BODY {"error":{"code":409,"message":"Service account github-action-388137872 already exists within project projects/app-sholl.","status":"ALREADY_EXISTS","details":[{"@type":"type.googleapis.com/google.rpc.ResourceInfo","resourceName":"projects/app-sholl/serviceAccounts/github-action-388137872@app-sholl.iam.gserviceaccount.com"}]}}
+[debug] [2021-07-21T14:44:13.696Z] >>> HTTP REQUEST GET https://iam.googleapis.com/v1/projects/app-sholl/serviceAccounts/github-action-388137872@app-sholl.iam.gserviceaccount.com  
+ 
+[debug] [2021-07-21T14:44:13.697Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/app-sholl:getIamPolicy  
+ 
+[debug] [2021-07-21T14:44:14.852Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Jul 2021 14:44:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-21T14:44:14.969Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Jul 2021 14:44:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1129","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-21T14:44:14.972Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/app-sholl:setIamPolicy  
+ {"policy":{"version":1,"etag":"BwXHoxEU8xQ=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-860726637437@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:app-sholl@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-63cpe@app-sholl.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-63cpe@app-sholl.iam.gserviceaccount.com","serviceAccount:github-action-388137872@app-sholl.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-388137872@app-sholl.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-860726637437@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-63cpe@app-sholl.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:iffandsb@gmail.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-388137872@app-sholl.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-388137872@app-sholl.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2021-07-21T14:44:16.669Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Jul 2021 14:44:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1593","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-21T14:44:16.671Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/app-sholl/serviceAccounts/github-action-388137872@app-sholl.iam.gserviceaccount.com/keys  
+ {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2021-07-21T14:44:18.373Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Jul 2021 14:44:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] +  Created service account github-action-388137872 with Firebase Hosting admin permissions. 
+[debug] [2021-07-21T14:44:18.428Z] >>> [apiv2][query] PUT https://api.github.com/repos/iffandsbiyu123/LABORA-APP/actions/secrets/FIREBASE_SERVICE_ACCOUNT_APP_SHOLL [none]
+[debug] [2021-07-21T14:44:18.429Z] >>> [apiv2][body] PUT https://api.github.com/repos/iffandsbiyu123/LABORA-APP/actions/secrets/FIREBASE_SERVICE_ACCOUNT_APP_SHOLL {"encrypted_value":"wN0F9DCdYzUqsdlvuUPz7dFi35EprGfi2ag9sA04WjFXwt/NYfnTadDbfznoZ08PV7dxmxpPlpkG0RfiUjiAjj1YyIMB1kS3wPd7LSUjZe1y/wHZPAxbcFRjOf2cWhcv2ok5xrZQU9hzd+HJgpJ08jElK/8GEC65/3tt0PjauHenNEcOr0975qoNgOOnMr1VQcJyJDbpLbdS34gHFTdaR5vBx/Z8Pg58Lrha4dGLVbecqLh/StXNUigNBvcj409d5X6bDBtyVaPfvHzOZVqhN0ieCJ1Zh6FW7QHgZdeT2kC29zEMAJzbqQKGOEcUohm1uIE4ZdbQ1xYkcAcovVyscUxbv8o93p5rrTLwpP7897ujETeUbT7q5PughcgGBP2JVZUUyqThuRoLH/t69sBlsnu7BjBtVLi/JORyvG9CY6IcqLcvnzQ4/+m9iV0/i1z+dZUTaVeIr6+sTxv+5KOrQf3+JAqcJgH7N6VEQhWdIY4rqM1+0bwa9mx+2oaqYTfCnvUXHhCJhDL4VH0DxECqDdGv7pJbWUwdljF2FenWlL9JiYgNpLJI2u2t2p0v8QlIpqcuKkJzGYiwSdPANsjZoIKMoDLHRLR4e6sZACYrxBEgC/YE1I3TWedoTx+eon6hsO9q0wkJEtkGEUaQhmKD6cYl7rtN2mLhjKsQVP4o9XEM+2sZqyNtOIcRlIaa59Xy8QZ5+f3JqkYZeWHwNEltei8O8dtgTCq7FTxG1Cj6uWkYxkK0M3mZtCLgfqxHMf/nOgkUfRUstN0gnpQqPd28yblv1sZcaPjZertnhvi7QlGbqeKdZ8dQyMIiqpz7NziS7+WWvrYeVuFGWIKZ0QRZexoyp74ncowIQeG9QSIaCQGEGbW3SOykPk7Ejgopniqd71i6C06ugRmAqnHxocn6Eb7n18UfHmTBKlmfoAn1GlPbHCI6r/4C8bxzPRtaVP2C1VbhADFOpenYO5yuFXu7Lkvc3HzQXAt3RdfyIMBNd23Vk9/s8PSs+vsdmbXGStqgVSVJ36JtdT35Utcy49/0J5n6To8w6OOwNvP6GCuJ/e2mbOhPstxcTRQyRpBtrnh3fixDR08cBsL5YRX7JR+N3WTA3jXcEy7Alx/Ggajr8Ee9x8F08Hf0XiTfM+pwgePJp2aIafm7o4G3I/XwDRlbkpgQsaUsz5iujyidKDtBMxi8KfRbXGPirtvugL4MP/wMIT9BQrtpFuWhGe9lS13KHkNR1uTLAPkU+2Nv5gUeZWg+79WkhP9ZG4E6nknefV0ATV6g5o20X3W4WLW+jJ0pD+8rhR5b+Snc+SXb7p9njL5FH8Bd6ysYhlNie67UtaVBsjGmVSSQ8mSHIwO/KoV19HA3dx1I3iaFxIVCtlbWBYfil6icwpuUQZ+tSM9rL88RLaaJEt5BArOWqaJ1uhaNiGaMfpmixKwL16zpDpmPV1IHWHWy45eZRkiTr1ER90pzH74y0UdM6mL9CEATZFv9Db+pjZwh3yCOFl3HB5JujmeL6qb/37y+x009iHLy/TQc72HchKTXUY5drO6b/3hLQ2JsMidFmjknfo6KzyqrUmfujouib/W8mwi1Zvr+f4fcBeVu0Nts4MERgQxe/Oe821dPkofTIGMyIB7xalbIGSQQWy9IpIhQckaP/L2wRkihzOJlMrctjNZoViCpW7Ff4tadsnMnQDmTdz8EJUQc64cfX31QN1waDSlofnl4H6QRg4NGZf0UVvnxzQCwhBkmVn0Ojo6JRzLI6vBv3sVOZKZrArRPgT0+YQY0nlN+wBqEzzyidB5jrc02WlnzgSubzL5jdJWmJHCnwacQQx08yuft7q8genoi3PtnRABR+U/A8WxBLsQz9lRvoSko7iSx+i33UANWBiCFsj7Bcf5U5PH5VLemaqngHndx4eYCD3kp5Js+gseFAYkvm8PLg4Rh1PeB/Uw9K+ZdeuqosT3l/ITKKkYUIy+RkWX34YgiuGq8KC50wv3P1MUdrCuE86xjelEHes6BWHVdK1Mql70O+nhwEwtsR4u9IwUnjyeJ1WBm0c8dEAXkjzrhMuPdqLAkDpvbovZxHDnhOQQ3Fl1TKvV5CtMBivHC+dg+beW+ewjBygj7tPBV4h7kJTME+O5xxi/drDFhYAKyZD0z2Zpav02YQqlBHrkvHo/rAY1/xZNDUPfSoTmosnukS1xWw1ZlrcdN0RTnAqJ8OroFnSOElscInTJAgJjS+hTfRXLRqBwkovTmLjM32SGcPJUSJZ+ovDMU8JW+xNrw+8Z5vJXnj0p+6mbGNxFMll9whl8C/S9IXhlrHVHKou9MBFHVG75lEKFETie15eue5vsduHs2m2fGEcB/YdGNakxRzTP8ccJ7iNfxZZHsU34HdIcIqMTlM0hJ5QmUpWJquXCmNPEx3f7SufqLwE5zAjMlzKVoi+B4BJP4oSe8RNWAGvl2Jh9IXbKxS88rXu6Txz4IAG+XU67neaEv0Pi2MBVFP02iIrwoUi2IFuqtcp3a55nSzKeiJRPEYzF38vSLTgUzoch1iqT9AIrDh6IKFTt6YK6g90m7UToYIQ8cx+4ODrze7sH9EGwwd1i0P2NaeNp5DvJoSubQmsHaaQATLXxNEFxXvMmsCDU0SzcFM0LT9M/NPRbi9DF31XTPqbB5e7lsoSMhLTVCGh5kPc/SJSON/Yv0PU0Qu2HV5sLRt8BspqjwL3ZYeIXKbRpzRsfMsKYeF2PMakp4745EjvG04fPZJH05NtQ0jGqvnJHirtEkm3xKh+yEbrCfSSba3RINiBKynBcZ9omPUo3V5QktN2jVEfZNUbnhvGwdl6q1rS1Z/znYchXtDKzljCXM5ua0j5UHc6PW6mdPssbS76/srciP9Mgq+k8sM8/CUNMpoNa7/AX5Cubgap3xW+33q+MC97bXC6LX9cKhblKFeBwUBS/ETcOSpbBqn+WGDJAEeHSOXsMwLyFnHoH3WhH0K6npScU1Bs1mNwQtO2UbrwMD15yoAUplkLO2Dzy8DNfNbnT5EoIRWHuv8/nrHrahO4L3GyRt/I1b6bDWz2OembiwCDqLG/iI8W7ZNhxEFy1N2kdUmIhAhDwxnBvHtLbccUQYWyTbnWQ0fN0gB4tmtzxsKxepACdfPRQhUAnqoyxU9VkRwUL/yWEho8SrjgL3qLTy","key_id":"568250167242549743"}
+[debug] [2021-07-21T14:44:18.951Z] <<< [apiv2][status] PUT https://api.github.com/repos/iffandsbiyu123/LABORA-APP/actions/secrets/FIREBASE_SERVICE_ACCOUNT_APP_SHOLL 204
+[debug] [2021-07-21T14:44:18.951Z] <<< [apiv2][body] PUT https://api.github.com/repos/iffandsbiyu123/LABORA-APP/actions/secrets/FIREBASE_SERVICE_ACCOUNT_APP_SHOLL undefined
+[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_APP_SHOLL. 
+[info] i  You can manage your secrets at https://github.com/iffandsbiyu123/LABORA-APP/settings/secrets. 
+[info] 
+[info] 
+[info] +  Created workflow file C:\Users\Udin\Desktop\iffan\LABORA-APP\.github/workflows/firebase-hosting-pull-request.yml 
